@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/Multiline/RCTMultilineTextInputViewManager.m \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/Multiline/RCTMultilineTextInputViewManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputViewManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextViewManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/Multiline/RCTMultilineTextInputView.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputDelegate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputViewProtocol.h
