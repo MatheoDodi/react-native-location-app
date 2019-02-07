@@ -1,41 +1,30 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, TextInput } from 'react-native';
-import { Row, SearchButton, Input } from './components/styles';
+import { StyleSheet, View, Text } from 'react-native';
+import { Row, SearchButton, Input, Container } from './src/components/styles';
+
+import PlaceInput from './src/components/PlaceInput';
+import ListPlaces from './src/components/ListPlaces';
+import ListItem from './src/components/ListItem';
 
 export default class App extends Component {
   state = {
-    placeName: '',
     places: []
   };
 
-  handleChangePlaceName = value => {
-    this.setState({ placeName: value });
-  };
+  handleAddPlace = place => {
+    const { places } = this.state;
+    const newPlaces = [...places, place];
 
-  // Displays new input on button tap
-  handlePlaceSubmit = () => {
-    const { placeName, places } = this.state;
-    const newPlaces = [...places, placeName]; // add input to the places array
-
-    this.setState({ places: newPlaces, placeName: '' });
+    this.setState({ places: newPlaces });
   };
 
   render() {
-    const { placeName, places } = this.state;
-
     return (
       <View style={styles.container}>
-        <Row>
-          <Input
-            style={{ borderColor: 'black', borderBottomWidth: 1 }}
-            value={placeName}
-            onChangeText={this.handleChangePlaceName}
-            placeholder="Search for an awesome place"
-          />
-          <SearchButton onPress={this.handlePlaceSubmit} title="Add" />
-        </Row>
-        {places.length > 0 &&
-          places.map(place => <Text key={place}>{place}</Text>)}
+        <Container>
+          <PlaceInput addPlace={this.handleAddPlace} />
+          <ListPlaces places={this.state.places} />
+        </Container>
       </View>
     );
   }

@@ -15,3 +15,15 @@ export const Row = styled.View`
   align-items: center;
   padding: 10px;
 `;
+
+export const ListItem = styled.View`
+  width: 100%;
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px;
+`;
+
+export const Container = styled.View`
+  width: 80%;
+  margin: 0 auto;
+`;
