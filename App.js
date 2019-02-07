@@ -12,14 +12,14 @@ export default class App extends Component {
 
   handleAddPlace = place => {
     const { places } = this.state;
-    const newPlaces = [...places, place];
+    const newPlaces = [...places, { key: Math.random(), value: place }];
 
     this.setState({ places: newPlaces });
   };
 
   handleDeletePlace = id => {
     const { places } = this.state;
-    const filteredPlaces = places.filter((place, index) => index !== id);
+    const filteredPlaces = places.filter(place => place.key !== id);
 
     this.setState({ places: filteredPlaces });
   };

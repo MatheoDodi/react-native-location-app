@@ -1,17 +1,21 @@
 import React from 'react';
-import { View, TouchableOpacity, ScrollView } from 'react-native';
+import { View, TouchableOpacity, FlatList } from 'react-native';
 
 import ListItem from './ListItem';
 
 const ListPlaces = ({ places, deletePlace }) => (
-  <ScrollView>
-    {places.length > 0 &&
-      places.map((place, i) => (
-        <TouchableOpacity key={i} onPress={() => deletePlace(i)}>
-          <ListItem placeName={place} />
-        </TouchableOpacity>
-      ))}
-  </ScrollView>
+  <FlatList
+    data={places}
+    renderItem={info => (
+      <TouchableOpacity
+        key={info.item.key}
+        onPress={() => deletePlace(info.item.key)}
+      >
+        <ListItem placeName={info.item.value} />
+      </TouchableOpacity>
+    )}
+    keyExtractor={item => item.key.toString()}
+  />
 );
 
 export default ListPlaces;
