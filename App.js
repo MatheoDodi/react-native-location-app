@@ -4,7 +4,6 @@ import { Row, SearchButton, Input, Container } from './src/components/styles';
 
 import PlaceInput from './src/components/PlaceInput';
 import ListPlaces from './src/components/ListPlaces';
-import ListItem from './src/components/ListItem';
 
 export default class App extends Component {
   state = {
@@ -18,12 +17,22 @@ export default class App extends Component {
     this.setState({ places: newPlaces });
   };
 
+  handleDeletePlace = id => {
+    const { places } = this.state;
+    const filteredPlaces = places.filter((place, index) => index !== id);
+
+    this.setState({ places: filteredPlaces });
+  };
+
   render() {
     return (
       <View style={styles.container}>
         <Container>
           <PlaceInput addPlace={this.handleAddPlace} />
-          <ListPlaces places={this.state.places} />
+          <ListPlaces
+            places={this.state.places}
+            deletePlace={id => this.handleDeletePlace(id)}
+          />
         </Container>
       </View>
     );

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
-import ListPlaces from './ListPlaces';
-import { Row, Input, SearchButton, Container } from './styles';
+import { Row, Input, SearchButton } from './styles';
 
 class PlaceInput extends Component {
   state = {
