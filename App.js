@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput } from 'react-native';
+import { Row, SearchButton, Input } from './components/styles';
 
 export default class App extends Component {
   state = {
@@ -13,11 +14,15 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          style={{ width: 300, borderColor: 'black', borderBottomWidth: 1 }}
-          value={this.state.placeName}
-          onChangeText={this.handleChangePlaceName}
-        />
+        <Row>
+          <Input
+            style={{ borderColor: 'black', borderBottomWidth: 1 }}
+            value={this.state.placeName}
+            onChangeText={this.handleChangePlaceName}
+            placeholder="Search for an awesome place"
+          />
+          <SearchButton title="Add" />
+        </Row>
       </View>
     );
   }
@@ -25,6 +30,7 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 100,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
