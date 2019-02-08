@@ -32,8 +32,26 @@ export const TextAndImage = styled.View`
   flex-direction: row;
   align-items: center;
 `;
+
 export const SmImage = styled.Image`
   height: 30px;
   width: 10px;
   margin-right: 10px;
+`;
+
+export const ImageDetails = styled.Image`
+  width: 100%;
+  height: 200px;
+`;
+
+export const DetailsModalContainer = styled.View`
+  margin: 20px;
+  margin-top: 60px;
+`;
+
+export const PlaceDetailsText = styled.Text`
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
 `;

@@ -23,20 +23,32 @@ export default class App extends Component {
     this.setState({ places: newPlaces });
   };
 
+  handleDeletePlace = id => {
+    const { places } = this.state;
+    const filteredPlaces = places.filter(place => place.key !== id);
+
+    this.setState(() => ({ places: filteredPlaces, selectedPlace: null }));
+  };
+
   handleSeleceItem = id => {
     const selectedPlace = this.state.places.find(place => id === place.key);
 
     this.setState({ selectedPlace });
-    // const { places } = this.state;
-    // const filteredPlaces = places.filter(place => place.key !== id);
-    // this.setState({ places: filteredPlaces });
+  };
+
+  handleUnselectItem = () => {
+    this.setState({ selectedPlace: null });
   };
 
   render() {
     return (
       <View style={styles.container}>
         <Container>
-          <PlaceDetail selectedPlace={this.state.selectedPlace} />
+          <PlaceDetail
+            deleteItem={this.handleDeletePlace}
+            unselectItem={this.handleUnselectItem}
+            selectedPlace={this.state.selectedPlace}
+          />
           <PlaceInput addPlace={this.handleAddPlace} />
           <ListPlaces
             places={this.state.places}
