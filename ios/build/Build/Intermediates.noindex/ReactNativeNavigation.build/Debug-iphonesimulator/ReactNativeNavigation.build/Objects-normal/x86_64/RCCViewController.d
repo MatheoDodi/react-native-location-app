@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCViewController.m \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCViewController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCNavigationController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCTabBarController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMDrawerController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerProtocol.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCTheSideBarManagerViewController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/TheSidebarController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAnimation.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCExternalViewControllerProtocol.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/Helpers/RCTHelpers.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/Helpers/RCCTitleViewHelper.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCCustomTitleView.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootViewDelegate.h

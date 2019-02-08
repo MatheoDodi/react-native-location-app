@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerController.m \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMDrawerController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerProtocol.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCViewController.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMExampleDrawerVisualStateManager.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMDrawerVisualState.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerHelper.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/RCCManagerModule.h \
+  /Users/matthew/Documents/All-Projects/react-native-location-app/node_modules/react-native-navigation/ios/UIViewController+Rotation.h

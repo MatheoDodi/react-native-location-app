@@ -41,6 +41,10 @@
 		<data>
 		DDdrjFYSdL6c42wGOpCf3Y2nyVc=
 		</data>
+		<key>Ionicons.ttf</key>
+		<data>
+		mRu3+slwnNWNo3kBdw79RwPFQu0=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -145,6 +149,17 @@
 			<key>hash2</key>
 			<data>
 			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
+			</data>
+		</dict>
+		<key>Ionicons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mRu3+slwnNWNo3kBdw79RwPFQu0=
+			</data>
+			<key>hash2</key>
+			<data>
+			INFzvLYFHQlzvgymqi+08npbKQ2AEGyyxWfI/cdyxxE=
 			</data>
 		</dict>
 		<key>PlugIns/AwesomeProjectTests.xctest.dSYM/Contents/Info.plist</key>
