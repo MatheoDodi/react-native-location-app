@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { Text } from 'react-native';
-import { ListItem } from './styles';
+import { TextAndImage, SmImage, ListItemContainer } from './styles';
 
-const listItem = ({ placeName }) => (
-  <ListItem>
-    <Text>{placeName}</Text>
-  </ListItem>
-);
+class ListItem extends PureComponent {
+  render() {
+    const { placeName, placeImage } = this.props;
+    return (
+      <ListItemContainer>
+        <TextAndImage>
+          <SmImage style={{ width: 30, height: 30 }} source={placeImage} />
+          <Text>{placeName}</Text>
+        </TextAndImage>
+      </ListItemContainer>
+    );
+  }
+}
 
-export default listItem;
+export default ListItem;

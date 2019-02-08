@@ -16,7 +16,7 @@ export const Row = styled.View`
   padding: 10px;
 `;
 
-export const ListItem = styled.View`
+export const ListItemContainer = styled.View`
   width: 100%;
   background-color: #eee;
   padding: 10px;
@@ -26,4 +26,14 @@ export const ListItem = styled.View`
 export const Container = styled.View`
   width: 80%;
   margin: 0 auto;
+`;
+
+export const TextAndImage = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+export const SmImage = styled.Image`
+  height: 30px;
+  width: 10px;
+  margin-right: 10px;
 `;
