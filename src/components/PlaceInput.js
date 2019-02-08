@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Input, SearchButton } from './styles';
+import placeImage from '../assets/images/beautiful-place.jpg';
 
 class PlaceInput extends Component {
   state = {
@@ -13,7 +14,7 @@ class PlaceInput extends Component {
   // sends new input to the App.js component
   handlePlaceSubmit = () => {
     const { placeName } = this.state;
-    this.props.addPlace(placeName);
+    this.props.addPlace({ placeName, placeImage });
 
     this.setState({ placeName: '' }); //clears input field
   };

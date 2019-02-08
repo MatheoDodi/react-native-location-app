@@ -1,43 +1,34 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Container } from './src/components/styles';
+import { connect } from 'react-redux';
 
+import { Container } from './src/components/styles';
 import PlaceInput from './src/components/PlaceInput';
 import ListPlaces from './src/components/ListPlaces';
-import placeImage from './src/assets/images/beautiful-place.jpg';
 import PlaceDetail from './src/components/PlaceDetails';
+import {
+  addPlace,
+  deletePlace,
+  selectPlace,
+  deselectPlace
+} from './src/store/actions/index';
 
-export default class App extends Component {
-  state = {
-    places: [],
-    selectedPlace: null
-  };
-
+class App extends Component {
   handleAddPlace = place => {
-    const { places } = this.state;
-    const newPlaces = [
-      ...places,
-      { key: Math.random(), name: place, image: placeImage }
-    ];
-
-    this.setState({ places: newPlaces });
+    this.props.onAddPlace(place);
   };
 
   handleDeletePlace = id => {
-    const { places } = this.state;
-    const filteredPlaces = places.filter(place => place.key !== id);
-
-    this.setState(() => ({ places: filteredPlaces, selectedPlace: null }));
+    this.props.onDeletePlace(id);
+    this.props.onDeselectPlace();
   };
 
-  handleSeleceItem = id => {
-    const selectedPlace = this.state.places.find(place => id === place.key);
-
-    this.setState({ selectedPlace });
+  handleSelectItem = id => {
+    this.props.onSelectPlace(id);
   };
 
   handleUnselectItem = () => {
-    this.setState({ selectedPlace: null });
+    this.props.onDeselectPlace();
   };
 
   render() {
@@ -47,18 +38,39 @@ export default class App extends Component {
           <PlaceDetail
             deleteItem={this.handleDeletePlace}
             unselectItem={this.handleUnselectItem}
-            selectedPlace={this.state.selectedPlace}
+            selectedPlace={this.props.selectedPlace}
           />
           <PlaceInput addPlace={this.handleAddPlace} />
           <ListPlaces
-            places={this.state.places}
-            selectItem={id => this.handleSeleceItem(id)}
+            places={this.props.places}
+            selectItem={id => this.handleSelectItem(id)}
           />
         </Container>
       </View>
     );
   }
 }
+
+const mapStateToProps = state => {
+  const { places, selectedPlace } = state.places;
+
+  return {
+    places,
+    selectedPlace
+  };
+};
+
+const mapDispatchToProps = dispatch => ({
+  onAddPlace: place => dispatch(addPlace(place)),
+  onDeletePlace: id => dispatch(deletePlace(id)),
+  onSelectPlace: id => dispatch(selectPlace(id)),
+  onDeselectPlace: () => dispatch(deselectPlace())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
 
 const styles = StyleSheet.create({
   container: {
