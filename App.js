@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 
-import { Container } from './src/components/styles';
+import { HomeView, Container } from './src/components/styles';
 import PlaceInput from './src/components/PlaceInput';
 import ListPlaces from './src/components/ListPlaces';
 import PlaceDetail from './src/components/PlaceDetails';
@@ -12,6 +11,7 @@ import {
   selectPlace,
   deselectPlace
 } from './src/store/actions/index';
+import Auth from './src/screens/Auth';
 
 class App extends Component {
   handleAddPlace = place => {
@@ -32,8 +32,9 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.props);
     return (
-      <View style={styles.container}>
+      <HomeView>
         <Container>
           <PlaceDetail
             deleteItem={this.handleDeletePlace}
@@ -46,7 +47,7 @@ class App extends Component {
             selectItem={id => this.handleSelectItem(id)}
           />
         </Container>
-      </View>
+      </HomeView>
     );
   }
 }
@@ -71,15 +72,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 100,
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    justifyContent: 'flex-start',
-    alignItems: 'center'
-  }
-});

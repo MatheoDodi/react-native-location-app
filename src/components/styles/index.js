@@ -1,5 +1,15 @@
 import styled from 'styled-components/native';
 
+export const HomeView = styled.View`
+  padding-top: 100;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fcff;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 export const Input = styled.TextInput`
   width: 70%;
 `;
