@@ -22,7 +22,8 @@ class Auth extends Component {
     showLoginInput: false,
     logInSubmit: false,
     scaleAnim: new Animated.Value(1),
-    opacAnime: new Animated.Value(1)
+    opacAnime: new Animated.Value(1),
+    validationError: ''
   };
 
   navigateToHome = () => {
@@ -35,26 +36,41 @@ class Auth extends Component {
 
   handleTapButton = () => {
     if (this.state.showLoginInput) {
-      const credentials = {
-        username: this.state.usernameValue,
-        password: this.state.passwordValue
-      };
+      if (!this.state.usernameValue && !this.state.passwordValue) {
+        this.setState({
+          validationError: `Username and Password fields can't be empty`
+        });
+      } else if (this.state.usernameValue && !this.state.passwordValue) {
+        this.setState({
+          validationError: `Password field can't be empty`
+        });
+      } else if (!this.state.usernameValue && this.state.passwordValue) {
+        this.setState({
+          validationError: `Username field can't be empty`
+        });
+      } else {
+        this.setState({ validationError: '' });
+        const credentials = {
+          username: this.state.usernameValue,
+          password: this.state.passwordValue
+        };
 
-      this.props.onUserLogin(credentials, this.navigateToHome);
+        this.props.onUserLogin(credentials, this.navigateToHome);
+      }
+    } else {
+      Animated.parallel([
+        Animated.timing(this.state.scaleAnim, {
+          toValue: 2.25,
+          duration: 800,
+          useNativeDriver: true
+        }),
+        Animated.timing(this.state.opacAnime, {
+          toValue: 0,
+          duration: 800,
+          useNativeDriver: true
+        })
+      ]).start(() => this.setState({ showLoginInput: true }));
     }
-
-    Animated.parallel([
-      Animated.timing(this.state.scaleAnim, {
-        toValue: 2.25,
-        duration: 800,
-        useNativeDriver: true
-      }),
-      Animated.timing(this.state.opacAnime, {
-        toValue: 0,
-        duration: 800,
-        useNativeDriver: true
-      })
-    ]).start(() => this.setState({ showLoginInput: true }));
   };
 
   render() {
@@ -81,6 +97,7 @@ class Auth extends Component {
           </Animated.View>
           {this.state.showLoginInput && (
             <AuthInput
+              error={this.state.validationError || this.props.error}
               position={220}
               placeholder="Username"
               value={this.state.usernameValue}

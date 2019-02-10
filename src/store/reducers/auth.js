@@ -23,7 +23,7 @@ const reducer = (state = initialState, action) => {
       } else {
         return {
           ...state,
-          error: 'Username or Password may be incorrect'
+          error: 'Username or Password is incorrect'
         };
       }
     default:
