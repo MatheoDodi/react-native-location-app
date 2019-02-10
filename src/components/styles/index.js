@@ -6,7 +6,7 @@ export const BackgroundImage = styled.ImageBackground`
   position: absolute;
   top: 0;
   left: 0;
-  transform: scale(2);
+  transform: scale(1);
 `;
 
 export const Logo = styled.Image`
@@ -52,6 +52,20 @@ export const SignupButtonWrapper = styled.View`
 
 export const SignupButtonText = styled.Text`
   font-size: 20px;
+  color: #b990ff;
+`;
+
+export const InputAuthPlaceholder = styled.View`
+  font-size: 18px;
+  width: 240px;
+  position: absolute;
+  top: ${({ top }) => top};
+`;
+
+export const InputAuth = styled.TextInput`
+  font-family: 'Poppins';
+  font-size: 18px;
+  width: 240px;
   color: #b990ff;
 `;
 

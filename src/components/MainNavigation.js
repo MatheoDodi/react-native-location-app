@@ -5,7 +5,8 @@ import FindPlace from '../screens/FindPlace';
 import SharePlace from '../screens/SharePlace';
 import {
   createStackNavigator,
-  createBottomTabNavigator
+  createBottomTabNavigator,
+  createSwitchNavigator
 } from 'react-navigation';
 
 const TabNav = createBottomTabNavigator({
@@ -25,25 +26,27 @@ const TabNav = createBottomTabNavigator({
   }
 });
 
-export const MainNavigator = createStackNavigator(
+export const StackNavigator = createStackNavigator({
+  Main: {
+    screen: TabNav,
+    navigationOptions: {
+      headerTitleStyle: {
+        color: '#6755A8'
+      },
+      headerStyle: {
+        backgroundColor: 'transparent'
+      }
+    }
+  }
+});
+
+export const MainNavigator = createSwitchNavigator(
   {
     Home: {
-      screen: TabNav,
-      navigationOptions: {
-        headerTitleStyle: {
-          color: '#6755A8'
-        },
-        headerStyle: {
-          backgroundColor: 'transparent'
-        }
-      }
+      screen: StackNavigator
     },
     Authenticate: {
-      screen: Auth,
-      navigationOptions: {
-        title: 'Auth',
-        header: null
-      }
+      screen: Auth
     }
   },
   {
