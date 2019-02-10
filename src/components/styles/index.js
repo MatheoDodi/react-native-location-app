@@ -1,9 +1,25 @@
 import styled from 'styled-components/native';
 
+export const BackgroundImage = styled.ImageBackground`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(2);
+`;
+
+export const Logo = styled.Image`
+  width: 260px;
+  height: 60px;
+  margin-bottom: 45px;
+`;
+
 export const AuthScreenContainer = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
+  padding-bottom: 110px;
 `;
 
 export const StatusBarMargin = styled.View`
@@ -15,13 +31,13 @@ export const LoginButtonWrapper = styled.View`
   background-color: #6fc5a5;
   color: white;
   padding: 5px 8px;
-  width: 175px;
+  width: 150px;
   align-items: center;
   box-shadow: 0 0 15px rgba(111, 197, 165, 1);
 `;
 
 export const LoginButtonText = styled.Text`
-  font-size: 35px;
+  font-size: 30px;
   color: white;
 `;
 
@@ -29,13 +45,13 @@ export const SignupButtonWrapper = styled.View`
   margin-top: 20px;
   border: 2px solid #b990ff;
   border-radius: 5;
-  width: 110px;
+  width: 100px;
   align-items: center;
   padding: 3px 5px;
 `;
 
 export const SignupButtonText = styled.Text`
-  font-size: 25px;
+  font-size: 20px;
   color: #b990ff;
 `;
 

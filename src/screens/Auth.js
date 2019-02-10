@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  Button,
-  ImageBackground,
-  TouchableOpacity
-} from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import bImage from '../assets/images/background.png';
+import logoImage from '../assets/images/logo.png';
 import {
   LoginButtonWrapper,
   StatusBarMargin,
   LoginButtonText,
   SignupButtonWrapper,
   SignupButtonText,
-  AuthScreenContainer
+  AuthScreenContainer,
+  Logo,
+  BackgroundImage
 } from '../components/styles';
 
 class Auth extends Component {
+  state = {
+    loggedIn: false
+  };
+
   render() {
     return (
-      <ImageBackground
-        style={{ width: '100%', height: '100%' }}
-        source={bImage}
-      >
+      <View style={{ flex: 1 }}>
+        <BackgroundImage resizeMode="cover" source={bImage} />
         <AuthScreenContainer>
           <StatusBarMargin />
-          <Text>Welcome, please log in!</Text>
+          <Logo source={logoImage} resizeMode="contain" />
           <TouchableOpacity>
             <LoginButtonWrapper>
               <LoginButtonText>Login</LoginButtonText>
@@ -37,7 +36,7 @@ class Auth extends Component {
             </SignupButtonWrapper>
           </TouchableOpacity>
         </AuthScreenContainer>
-      </ImageBackground>
+      </View>
     );
   }
 }
