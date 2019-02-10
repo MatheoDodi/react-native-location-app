@@ -1,5 +1,44 @@
 import styled from 'styled-components/native';
 
+export const AuthScreenContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const StatusBarMargin = styled.View`
+  margin-top: 29px;
+`;
+
+export const LoginButtonWrapper = styled.View`
+  border-radius: 5;
+  background-color: #6fc5a5;
+  color: white;
+  padding: 5px 8px;
+  width: 175px;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(111, 197, 165, 1);
+`;
+
+export const LoginButtonText = styled.Text`
+  font-size: 35px;
+  color: white;
+`;
+
+export const SignupButtonWrapper = styled.View`
+  margin-top: 20px;
+  border: 2px solid #b990ff;
+  border-radius: 5;
+  width: 110px;
+  align-items: center;
+  padding: 3px 5px;
+`;
+
+export const SignupButtonText = styled.Text`
+  font-size: 25px;
+  color: #b990ff;
+`;
+
 export const HomeView = styled.View`
   padding-top: 100;
   flex: 1;

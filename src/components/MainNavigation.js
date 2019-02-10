@@ -1,4 +1,5 @@
-import App from '../../App';
+import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 import Auth from '../screens/Auth';
 import FindPlace from '../screens/FindPlace';
 import SharePlace from '../screens/SharePlace';
@@ -11,7 +12,9 @@ const TabNav = createBottomTabNavigator({
   FindPlace: {
     screen: FindPlace,
     navigationOptions: {
-      title: 'Find Place'
+      title: 'Hello',
+      tabBarLabel: 'Find Place',
+      tabBarIcon: () => <Icon name="ios-search" color="black" size={24} />
     }
   },
   SharePlace: {
@@ -27,7 +30,6 @@ export const MainNavigator = createStackNavigator(
     Home: {
       screen: TabNav,
       navigationOptions: {
-        title: 'Home',
         headerTitleStyle: {
           color: '#6755A8'
         },
@@ -39,11 +41,12 @@ export const MainNavigator = createStackNavigator(
     Authenticate: {
       screen: Auth,
       navigationOptions: {
-        title: 'Auth'
+        title: 'Auth',
+        header: null
       }
     }
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Authenticate'
   }
 );
