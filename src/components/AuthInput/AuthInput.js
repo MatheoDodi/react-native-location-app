@@ -39,6 +39,8 @@ const AuthInput = ({
         secureTextEntry={secure && secure}
         placeholder={placeholder}
         onChangeText={changeValue}
+        autoCapitalize="none"
+        autoCorrect={false}
       />
     </InputAuthPlaceholder>
   </Fragment>
