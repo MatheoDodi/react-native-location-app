@@ -28,15 +28,7 @@ const TabNav = createBottomTabNavigator({
 
 export const StackNavigator = createStackNavigator({
   Main: {
-    screen: TabNav,
-    navigationOptions: {
-      headerTitleStyle: {
-        color: '#6755A8'
-      },
-      headerStyle: {
-        backgroundColor: 'transparent'
-      }
-    }
+    screen: TabNav
   }
 });
 
@@ -50,6 +42,6 @@ export const MainNavigator = createSwitchNavigator(
     }
   },
   {
-    initialRouteName: 'Authenticate'
+    initialRouteName: 'Home'
   }
 );
