@@ -1,8 +1,8 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
+import App from '../../App';
 import Auth from '../screens/Auth';
 import FindPlace from '../screens/FindPlace';
-import SharePlace from '../screens/SharePlace';
 import {
   createStackNavigator,
   createBottomTabNavigator,
@@ -19,7 +19,7 @@ const TabNav = createBottomTabNavigator({
     }
   },
   SharePlace: {
-    screen: SharePlace,
+    screen: App,
     navigationOptions: {
       title: 'Share Place'
     }
