@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import App from '../../App';
 import Auth from '../screens/Auth';
-import FindPlace from '../screens/FindPlace';
+import SharePlace from '../screens/SharePlace';
 import {
   createStackNavigator,
   createBottomTabNavigator,
@@ -10,15 +10,15 @@ import {
 } from 'react-navigation';
 
 const TabNav = createBottomTabNavigator({
-  FindPlace: {
-    screen: FindPlace,
+  SharePlace: {
+    screen: SharePlace,
     navigationOptions: {
       title: 'Hello',
       tabBarLabel: 'Find Place',
       tabBarIcon: () => <Icon name="ios-search" color="black" size={24} />
     }
   },
-  SharePlace: {
+  Home: {
     screen: App,
     navigationOptions: {
       title: 'Share Place'

@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Location would like to access your photos to save new photos to your photo gallery</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Location would like to access your photos to upload a new location photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Location would like to access your camera to capture a new location photo</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Let&apos;s share a place!</string>
 	<key>CFBundleDevelopmentRegion</key>

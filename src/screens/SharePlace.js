@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { View, Text } from 'react-native';
-import PlaceInput from '../components/PlaceInput';
+
+import PickImage from '../components/PickImage';
+import PickLocation from './PickLocation';
 import { addPlace } from '../store/actions';
 
 class SharePlace extends Component {
   render() {
-    console.log(this.props);
     return (
-      <View>
-        <PlaceInput addPlace={place => this.props.onAddPlace(place)} />
-        {this.props.places &&
-          this.props.places.map(place => <Text>{place.name}</Text>)}
+      <View style={{ flex: 1 }}>
+        <PickLocation />
+        <PickImage />
       </View>
     );
   }
