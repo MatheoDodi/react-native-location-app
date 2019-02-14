@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>11CD86C4-8C72-4FC7-A37A-502C3747C540</key>
+		<key>6862685A-1E29-4019-AFD1-BBF7CD84D969</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>11CD86C4-8C72-4FC7-A37A-502C3747C540.xcactivitylog</string>
+			<string>6862685A-1E29-4019-AFD1-BBF7CD84D969.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,13 @@
 			<key>signature</key>
 			<string>Building project AwesomeProject with scheme AwesomeProject and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>571689661.67115605</real>
+			<real>571813038.54809797</real>
 			<key>timeStoppedRecording</key>
-			<real>571689668.45744395</real>
+			<real>571813044.60183203</real>
 			<key>title</key>
 			<string>Building project AwesomeProject with scheme AwesomeProject and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>11CD86C4-8C72-4FC7-A37A-502C3747C540</string>
+			<string>6862685A-1E29-4019-AFD1-BBF7CD84D969</string>
 		</dict>
 	</dict>
 </dict>

@@ -15,18 +15,19 @@ class PickImage extends Component {
         console.log('Error', res.error);
       } else {
         this.setState({
-          pickedImage: { uri: res.uri, base64: res.data }
+          pickedImage: { uri: res.uri }
         });
+        this.props.getImage(res.data);
       }
     });
   };
 
   render() {
     return (
-      <View style={{ flex: 1, marginTop: 20 }}>
+      <View style={{ flex: 1, marginTop: 180 }}>
         <Image
           source={this.state.pickedImage}
-          style={{ width: '100%', height: 200 }}
+          style={{ width: '100%', height: 180 }}
         />
         <Button onPress={this.handlePickImage} title="Pick Image" />
       </View>

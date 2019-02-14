@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Dimensions, Button } from 'react-native';
+import { View, Text, Dimensions, Button, TouchableOpacity } from 'react-native';
 import MapView from 'react-native-maps';
 
 class PickLocation extends Component {
@@ -33,6 +33,7 @@ class PickLocation extends Component {
   };
 
   handleGetLocation = () => {
+    console.log('Hi');
     navigator.geolocation.getCurrentPosition(
       position => {
         const coordsEvent = {
@@ -44,6 +45,7 @@ class PickLocation extends Component {
           }
         };
         this.handlePickLocation(coordsEvent);
+        this.props.getLocation(coordsEvent.nativeEvent.coordinate);
       },
       err => {
         console.log(err);
