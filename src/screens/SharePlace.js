@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, ScrollView } from 'react-native';
 
 import PickImage from '../components/PickImage';
 import PickLocation from './PickLocation';
@@ -34,18 +34,29 @@ class SharePlace extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <ScrollView style={{ flex: 1 }}>
+        <Text style={{ alignSelf: 'center' }}>Location Name</Text>
         <TextInput
           value={this.state.inputValue}
           onChangeText={this.handleInputChange}
-          style={{ width: 300 }}
+          style={{
+            width: 300,
+            alignSelf: 'center',
+            padding: 10,
+            margin: 30,
+            backgroundColor: '#D5D5D5'
+          }}
         />
         <PickLocation
           getLocation={userLocation => this.handleGetUserLocation(userLocation)}
         />
         <PickImage getImage={image => this.handleGetImage(image)} />
-        <Button onPress={this.handleUploadButton} title="Upload" />
-      </View>
+        <Button
+          style={{ marginTop: 40 }}
+          onPress={this.handleUploadButton}
+          title="Upload"
+        />
+      </ScrollView>
     );
   }
 }
