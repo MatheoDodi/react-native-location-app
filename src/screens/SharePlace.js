@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text, TextInput, Button, ScrollView } from 'react-native';
+import { View, Text, TextInput, Button, ScrollView, Alert } from 'react-native';
 
 import PickImage from '../components/PickImage';
 import PickLocation from './PickLocation';
@@ -22,6 +22,10 @@ class SharePlace extends Component {
       placeName: this.state.inputValue
     };
     this.props.onAddPlace(place, this.state.userLocation, this.state.image);
+    Alert.alert(
+      'Place Added',
+      'Thank you for sharing another awesome location with us'
+    );
   };
 
   handleGetUserLocation = userLocation => {

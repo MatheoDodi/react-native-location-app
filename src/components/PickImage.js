@@ -24,7 +24,7 @@ class PickImage extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, marginTop: 180 }}>
+      <View style={{ flex: 1 }}>
         <Image
           source={this.state.pickedImage}
           style={{ width: '100%', height: 180 }}
