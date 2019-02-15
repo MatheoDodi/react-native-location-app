@@ -15,7 +15,7 @@ export const handleAddPlace = (place, location, image) => {
     };
     axios
       .post(
-        'https://react-native-location-app.firebaseio.com/place.json',
+        'https://react-hooks-matthew.firebaseio.com/place.json',
         JSON.stringify(placeData)
       )
       .then(res => res.json())

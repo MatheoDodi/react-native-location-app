@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>6862685A-1E29-4019-AFD1-BBF7CD84D969</string>
 		</dict>
+		<key>F3FAA6C1-BEC2-4527-AA10-04D3F8C2A4DF</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3FAA6C1-BEC2-4527-AA10-04D3F8C2A4DF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AwesomeProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AwesomeProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project AwesomeProject with scheme AwesomeProject and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>571897190.78789496</real>
+			<key>timeStoppedRecording</key>
+			<real>571897192.24997199</real>
+			<key>title</key>
+			<string>Building project AwesomeProject with scheme AwesomeProject and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>F3FAA6C1-BEC2-4527-AA10-04D3F8C2A4DF</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
