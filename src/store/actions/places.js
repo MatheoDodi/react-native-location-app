@@ -13,14 +13,25 @@ export const handleAddPlace = (place, location, image) => {
       name: place.placeName,
       location
     };
+    // TODO
+    // Implement POST method to store location images on firebase storage
+
     axios
       .post(
-        'https://react-hooks-matthew.firebaseio.com/place.json',
-        JSON.stringify(placeData)
+        'https://us-central1-react-hooks-matthew.cloudfunctions.net/storeImage',
+        JSON.stringify({ image })
       )
-      .then(res => res.json())
-      .then(parsedRes => console.log(parsedRes))
+      .then(res => console.log(res))
       .catch(err => console.log(err));
+
+    // axios
+    //   .post(
+    //     'https://react-hooks-matthew.firebaseio.com/place.json',
+    //     JSON.stringify(placeData)
+    //   )
+    //   .then(parsedRes => console.log(parsedRes))
+    //   .catch(err => console.log(err));
+
     // return dispatch(addPlace(place, location, image));
   };
 };

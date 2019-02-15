@@ -33,7 +33,6 @@ class PickLocation extends Component {
   };
 
   handleGetLocation = () => {
-    console.log('Hi');
     navigator.geolocation.getCurrentPosition(
       position => {
         const coordsEvent = {
