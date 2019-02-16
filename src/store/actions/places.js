@@ -8,29 +8,28 @@ const addPlace = (place, location, image) => ({
 
 export const handleAddPlace = (place, location, image) => {
   return dispatch => {
-    console.log(image);
     const placeData = {
       name: place.placeName,
       location
     };
     // TODO
-    // Implement POST method to store location images on firebase storage
-
-    axios
-      .post(
-        'https://us-central1-react-hooks-matthew.cloudfunctions.net/storeImage',
-        JSON.stringify({ image })
-      )
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    // Fix error 500 that the google storage response is giving
 
     // axios
     //   .post(
-    //     'https://react-hooks-matthew.firebaseio.com/place.json',
-    //     JSON.stringify(placeData)
+    //     'https://us-central1-react-hooks-matthew.cloudfunctions.net/storeImage',
+    //     JSON.stringify({ image })
     //   )
-    //   .then(parsedRes => console.log(parsedRes))
+    //   .then(res => console.log(res))
     //   .catch(err => console.log(err));
+
+    axios
+      .post(
+        'https://react-native-location-app.firebaseio.com/places.json',
+        JSON.stringify(placeData)
+      )
+      .then(parsedRes => console.log(parsedRes))
+      .catch(err => console.log(err));
 
     // return dispatch(addPlace(place, location, image));
   };

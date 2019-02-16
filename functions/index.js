@@ -4,8 +4,8 @@ const fs = require('fs');
 const UUID = require('uuid-v4');
 
 const gcconfig = {
-  projectId: 'YOUR_PROJECT_ID',
-  keyFilename: 'awesome-places.json'
+  projectId: 'react-hooks-matthew',
+  keyFilename: 'react-native-location.json'
 };
 
 const gcs = require('@google-cloud/storage')(gcconfig);
